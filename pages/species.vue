@@ -17,29 +17,10 @@
         v-for="(item, index) in items.filter(f => f.species == species)"
         :key="index"
       >
-        <template slot="progress">
-          <v-progress-linear
-            color="deep-purple"
-            height="10"
-            indeterminate
-          ></v-progress-linear>
-        </template>
-
         <v-img height="250" :src="item.image"></v-img>
-
         <v-card-title class="">
           {{ item.name }}
         </v-card-title>
-
-        <v-card-text>
-          <v-row align="center" class="mx-0">
-            <div class="grey--text "></div>
-          </v-row>
-
-          <div class="my-4 text-subtitle-1"></div>
-
-          <div></div>
-        </v-card-text>
       </v-card>
     </div>
   </div>
